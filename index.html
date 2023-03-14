@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            body {
+                background-color: #120f0f;
+            }
+            p {
+                text-align: center;
+                vertical-align: bottom;
+                margin-top: 200px;
+                margin-bottom: 20px;
+                font-size: 102px;
+                font-weight: 700;
+                color: #e8eded;
+
+            }
+            a {                
+                margin-right: 15px;
+                text-decoration-line: none;
+                color: aquamarine;
+            }
+            a:hover{
+                color: #e8eded;
+            }
+            .submitbutton {
+                margin-top: 20px;
+                margin-right: 15px;
+                margin-left: 15px;
+                width: 175px;
+                height: 50px;
+                font-size: 16px;
+                font-weight: 700;
+                color: #120f0f;
+            }
+            #links {
+                text-align: end;
+                width: 100%;
+                font-size: 30px;
+                height: auto;
+                margin-top: 20px;
+            }
+
+            #searchbarform {
+                text-align: center;
+            }
+            #searchbar {
+                width: 500px;
+                height: 50px;
+                border-radius: 25px;
+                font-size: 32px;
+                padding-left: 20px;
+                background-color: #e8eded;
+                color:#120f0f;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="links">
+            <a href="imagesearch.html">Imagesearch</a>
+            <a href="advancedsearch.html">Advanced search</a>
+        </div>
+        <div>
+            <p>
+                Google
+            </p>
+        </div>
+        <form id="searchbarform" action="https://google.com/search">
+            <input id="searchbar" type="text" name="q">
+            <div>
+                <input class="submitbutton" type="submit" value="Google Search">
+                <input class="submitbutton" type="submit" value="I'm Feeling Lucky"
+            </div>
+            
+        </form>
+        
+    </body>
+</html>
