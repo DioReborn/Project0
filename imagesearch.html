@@ -6,16 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imagesearch</title>
     <style>
-        #link {
-            text-align: end;
-            font-size: 30px;
-        }
+body {
+                background-color: #120f0f;
+            }
+            p {
+                text-align: center;
+                vertical-align: bottom;
+                margin-top: 200px;
+                margin-bottom: 20px;
+                font-size: 102px;
+                font-weight: 700;
+                color: #e8eded;
+
+            }
+            a {                
+                margin-right: 15px;
+                text-decoration-line: none;
+                color: aquamarine;
+            }
+            a:hover{
+                color: #e8eded;
+            }
+            .submitbutton {
+                margin-top: 20px;
+                margin-right: 15px;
+                margin-left: 15px;
+                width: 175px;
+                height: 50px;
+                font-size: 16px;
+                font-weight: 700;
+                color: #120f0f;
+            }
+            #links {
+                text-align: end;
+                width: 100%;
+                font-size: 30px;
+                height: auto;
+                margin-top: 20px;
+            }
+
+            #searchbarform {
+                text-align: center;
+            }
+            #searchbar {
+                width: 500px;
+                height: 50px;
+                border-radius: 25px;
+                font-size: 32px;
+                padding-left: 20px;
+                background-color: #e8eded;
+                color:#120f0f;
+            }
     </style>
+        <!-- https://www.google.com/search?q=rubberduck&tbm=isch -->
 </head>
 <body>
-    <div id="link">
+    <div id="links">
         <a href="index.html">Back</a>
     </div>
-    https://www.google.com/search?q=rubberduck&tbm=isch
+    <div>
+        <p>
+            Google
+        </p>
+    </div>
+    <form id="searchbarform" action="https://google.com/search" >
+        <input id="searchbar" type="text" name="q" >
+        <input id="parameters" type="hidden" name="tbm"  value="isch">  <!-- name is the attributename & value is the attributevalue for a query -->
+        <div>
+            <input class="submitbutton" type="submit" value="Google Search">
+            <input class="submitbutton" type="submit" value="I'm Feeling Lucky"
+        </div>
+        
+    </form>
+    
+
 </body>
 </html>
